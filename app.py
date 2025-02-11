@@ -36,7 +36,6 @@ def doctors():
 def services():
     return render_template('service.html')
 
-
 @app.route('/ask', methods=['POST'])
 def ask():
     user_input = request.json['message']
@@ -44,4 +43,5 @@ def ask():
     return jsonify({'response': response})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # This line ensures the app works in production environments like Railway
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=False)
