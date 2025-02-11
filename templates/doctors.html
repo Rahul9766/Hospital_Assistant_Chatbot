@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - City General Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/doctors.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <img src="/static/logo.png" alt="Hospital Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('doctors') }}">Doctors</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Doctors Section -->
+    <section class="doctors-section">
+        <div class="doctors-content">
+            <h1>Our Doctors</h1>
+            <p>Meet our team of highly skilled and experienced doctors.</p>
+            <div class="doctors-grid">
+                <!-- Doctor 1 -->
+                <div class="doctor-card">
+                    <img src="/static/male_doctor.jpg" alt="Dr. John Doe" class="doctor-photo">
+                    <h3>Dr. John Doe</h3>
+                    <p class="specialization">Cardiologist</p>
+                    <p class="experience">10+ years of experience</p>
+                    <p class="bio">Expert in cardiovascular diseases and advanced heart care.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card">
+                    <img src="/static/female_doctor.jpg" alt="Dr. Jane Smith" class="doctor-photo">
+                    <h3>Dr. Jane Smith</h3>
+                    <p class="specialization">Neurologist</p>
+                    <p class="experience">8+ years of experience</p>
+                    <p class="bio">Specializes in brain and nervous system disorders.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card">
+                    <img src="/static/female_doctor.jpg" alt="Dr. Michael Brown" class="doctor-photo">
+                    <h3>Dr. Michael Brown</h3>
+                    <p class="specialization">Orthopedic Surgeon</p>
+                    <p class="experience">12+ years of experience</p>
+                    <p class="bio">Expert in bone, joint, and muscle conditions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Doctor 4 -->
+                <div class="doctor-card">
+                    <img src="/static/female_doctor.jpg" alt="Dr. Emily Davis" class="doctor-photo">
+                    <h3>Dr. Emily Davis</h3>
+                    <p class="specialization">Pediatrician</p>
+                    <p class="experience">7+ years of experience</p>
+                    <p class="bio">Specializes in care for infants, children, and adolescents.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Doctor 5 -->
+                <div class="doctor-card">
+                    <img src="/static/male_doctor.jpg" alt="Dr. Robert Wilson" class="doctor-photo">
+                    <h3>Dr. Robert Wilson</h3>
+                    <p class="specialization">Radiologist</p>
+                    <p class="experience">9+ years of experience</p>
+                    <p class="bio">Expert in imaging and diagnostic services.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Doctor 6 -->
+                <div class="doctor-card">
+                    <img src="/static/female_doctor.jpg" alt="Dr. Sarah Lee" class="doctor-photo">
+                    <h3>Dr. Sarah Lee</h3>
+                    <p class="specialization">General Surgeon</p>
+                    <p class="experience">11+ years of experience</p>
+                    <p class="bio">Specializes in advanced surgical procedures.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/doctors.js') }}"></script>
+</body>
+</html>
