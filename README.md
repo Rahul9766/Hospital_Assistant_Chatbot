@@ -13,8 +13,7 @@ A smart AI-powered chatbot built using Flask and Groq’s Llama3 model to assist
 - 🐍 Python (Flask)  
 - 🤖 LangChain  
 - 🌍 HTML, CSS, JavaScript  
-- 📦 Docker (for deployment)  
-- ☁️ Railway (for hosting)  
+ 
 
 ## ⚙️ How It Works
 1. 🚀 User enters a query on the chatbot interface.  
